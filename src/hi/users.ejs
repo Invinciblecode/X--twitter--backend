@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>users</title>
+</head>
+<body>
+    <style> 
+    /*dont forget to edit users box using css*/
+        </style>
+    <h1>hi</h1>
+    <div class="container"></div>
+    <% users.forEach(user => { %>
+        <div class="user-box">
+        <p>name:<%= user.name %></p> 
+        <p>lastname:<%= user.lastname %></p> 
+        <p>phone numer :<%= user.phoneNumber %></p>
+        <p>nationality:<%= user.country %></p>
+        <p> email adress:<%= user.emailAdress %></p>
+        <p> user created at :<%= user.createdAt %></p>
+       
+    </div>
+    <% });  %>
+
+    
+</body>
+</html>
